@@ -1,4 +1,3 @@
-# Backend for BeatBridge
 
 ## Requirements
 
