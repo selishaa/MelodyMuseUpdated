@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 export default function Features() {
   const animationControls = {
     hidden: { opacity: 0, x: -500 },
-    visible: { opacity: 1, x: 0 },
+    visible: { opacity: 1, x: 0 }, // Adjust the x value as needed
   };
 
   const sectionRef = useRef(null);
@@ -22,7 +22,7 @@ export default function Features() {
             animationControls.hidden && sectionControls.start("hidden");
           }
         });
-      },
+      }, // Options for the observer (other than the root)
       {
         root: null,
         rootMargin: "0px",
@@ -41,6 +41,7 @@ export default function Features() {
     };
   }, []);
 
+  
   const sectionControls = useAnimation();
 
   return (
